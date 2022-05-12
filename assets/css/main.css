@@ -118,6 +118,7 @@ a
     width: 60px;
     height: 60px;
     position: fixed;
+    z-index: 1;
 }
 .input
 {
