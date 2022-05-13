@@ -158,3 +158,6 @@ a
 {
     background-color: #425275;
 }
+.adsbygoogle{
+    z-index: -1;
+}
