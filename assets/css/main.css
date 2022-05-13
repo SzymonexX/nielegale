@@ -70,13 +70,6 @@ strong
     padding: 5px;
     transition: 0.5s;
 }
-
-.author-image
-{
-    float: right;
-    color: #EaEaEa;
-    padding: 0 5px;
-}
 footer
 {
     width: 100%;
@@ -118,6 +111,7 @@ a
     width: 60px;
     height: 60px;
     position: fixed;
+    z-index: 1;
 }
 .input
 {
@@ -163,4 +157,7 @@ a
 .darkmode--footer
 {
     background-color: #425275;
+}
+.adsbygoogle{
+    z-index: -1;
 }
