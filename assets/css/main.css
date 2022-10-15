@@ -25,6 +25,7 @@ body {
 	transform: translate(-50%, -50%);
 	max-height: 100%;
 	max-width: 100%;
+	min-width: 500px;
 	text-align: center;
 	transition: all 0.4s;
 	overflow: auto;
