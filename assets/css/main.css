@@ -1,0 +1,177 @@
+@import './scrollbar.css';
+:root {
+	--dark: rgba(29, 102, 238, 0.911);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-image: url('https://media.discordapp.net/attachments/602615838754996255/1068214519056306237/Zrzut_ekranu_2023-01-26_180153.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	/* word-break: break-all; */
+}
+
+h2 {
+	padding: 10px 0 0;
+	color: white;
+	text-shadow: 3px 3px 1px #055dff;
+}
+
+u {
+	color: red;
+	text-decoration: none;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	text-shadow: 0px 0px 0px;
+}
+
+strong {
+	padding: 5px;
+	color: #2d72f1;
+	/*#2841cf*/
+	font-weight: 500;
+	background-color: rgba(17, 17, 17, 0.363);
+	border-radius: 10px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	background-color: #2a2d33;
+}
+
+.update {
+	position: absolute;
+	top: 20px;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	z-index: 1;
+}
+
+.update-btn {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: #f5f5f5;
+	font-size: 24px;
+	background: none;
+	border: none;
+	text-shadow: 0px 0px 5px var(--dark), 0px 0px 10px var(--dark);
+	cursor: pointer;
+	transition: color 0.3s;
+}
+
+.update-btn:hover {
+	color: #ddd;
+}
+
+.update-text {
+	display: none;
+	max-width: 90%;
+	padding: 10px;
+	color: #ebebeb;
+	background-color:#2a2d33;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.container {
+	position: absolute;
+	top: 47%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	width: 65%;
+	height: 90%;
+	background-color: #222938;
+	border-radius: 5px;
+}
+
+.row {
+	padding: 15px;
+	width: 100%;
+	border-radius: 5px;
+	background-color: #222938;
+	text-align: center;
+	transition: all 0.4s;
+	overflow: auto;
+}
+
+.container h1 {
+	margin-bottom: 15px;
+	color: #4686f6;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.input {
+	margin-bottom: 15px;
+	padding: 10px 15px;
+	width: calc(100% - 30px);
+	font-size: 18px;
+	color: white;
+	background-color: #3b3b3b;
+	border: 1px solid #7a7a7a;
+	border-radius: 5px;
+	transition: 0.5s;
+	outline: none;
+}
+
+.container ul li {
+	padding: 15px 0;
+	list-style-type: none;
+	background-color: #383838;
+	/*#cfd8dc*/
+	border-bottom: 1px solid #535353;
+}
+
+.container ul li p {
+	padding: 0 10px;
+	font-size: 23px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.container ul li:hover {
+	background-color: #212121;
+}
+
+@media (max-width: 768px) {
+	.container{
+		width: 80%;
+	}
+
+	.container h1 {
+		font-size: 20px;
+	}
+
+	.container ul li p {
+		font-size: 15px;
+	}
+
+	.input {
+		font-size: 13px;
+	}
+
+	footer h2 {
+		font-size: 12px;
+	}
+}
